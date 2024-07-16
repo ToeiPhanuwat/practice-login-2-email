@@ -1,0 +1,25 @@
+#spring.application.name=email
+
+server:
+  port: 1151
+spring:
+  kafka:
+    bootstrap-servers:
+      - localhost:9092
+    consumer:
+      group-id: "my-login-2-app"
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: spxth5735 #YOUR_USERNAME
+    password: gkdpamanfwkfqpia #YOUR_PASSWORD
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+---
+app:
+  email:
+    from: spxth5735 #YOUR_ACCOUNT@gmail.com
