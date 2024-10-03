@@ -29,7 +29,6 @@ public class KafkaConfig {
         map.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringSerializer.class);
         map.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonSerializer.class);
         map.put(ConsumerConfig.GROUP_ID_CONFIG, "json");
-
         return map;
     }
 
